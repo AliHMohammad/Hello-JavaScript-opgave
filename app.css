@@ -3,5 +3,15 @@ body {
   font-style: oblique;
   font-family: Arial, Helvetica, sans-serif;
   background-color: aqua;
+  display: inline-block;
+}
+
+#OKKnap{
+  background-color: rgb(0, 255, 0);
+  cursor: pointer;
+}
+
+input{
+  border-style: double;
 }
 /* mdn web docs */
