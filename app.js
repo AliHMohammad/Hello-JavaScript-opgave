@@ -1,7 +1,5 @@
-const navn = prompt("Indtast venligst dit navn");
+document.querySelector("button").addEventListener("click", sayHello);
 
-if (navn) {
-  document.write(`Hej ${navn}!`);
-} else {
-  document.write(`Indtast venligst dit navn. Genindlæs siden`);
+function sayHello() {
+  document.querySelector("h3").textContent = `Hej ${document.querySelector("input").value}!`;
 }
