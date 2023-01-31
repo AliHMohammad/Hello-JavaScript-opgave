@@ -14,7 +14,9 @@ function sigHej() {
   }
 
   if (document.querySelector("#alder").value >= 30 && udfyldt) {
-    document.querySelector("#uAreOld").textContent = "You are very old!"
+    document.querySelector("#uAreOld").textContent = "Du er meget gammel!"
+  } else if (document.querySelector("#alder").value <= 29 && udfyldt) {
+    document.querySelector("#uAreOld").textContent = "Du er meget ung!"
   } else {
     document.querySelector("#uAreOld").textContent = null;
   }
