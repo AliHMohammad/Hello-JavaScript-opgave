@@ -1,4 +1,12 @@
 document.querySelector("#OKKnap").addEventListener("click", sigHej);
+document.querySelector("#resetKnap").addEventListener("click", resetkasser)
+
+function resetkasser() {
+  document.querySelector("#navn").value = null;
+  document.querySelector("#alder").value = null;
+  document.querySelector("#email").value = null;
+  document.querySelector("#resultat").textContent = "Values have reset";
+}
 
 function sigHej() {
   let udfyldt = false;
